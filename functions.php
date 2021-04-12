@@ -27,6 +27,7 @@ function total_child_enqueue_parent_theme_style() {
 
 	// Load the stylesheet
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), $version );
+	wp_enqueue_style( 'ciccarone-style', get_stylesheet_directory_uri() . '/style.css', array(), $version );
 
 }
 add_action( 'wp_enqueue_scripts', 'total_child_enqueue_parent_theme_style' );
