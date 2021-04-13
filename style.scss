@@ -82,7 +82,7 @@ $width-tight: 750px;
   }
 
   > .vc_row {
-    max-width: $width-tight;
+    max-width: 810px;
     margin: 0 auto;
   }
 
@@ -100,7 +100,7 @@ $width-tight: 750px;
 }
 
 .new-footer {
-  background-image: url('/wp-content/uploads/2021/04/footer-bg.jpg');
+  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.0)),url('/wp-content/uploads/2021/04/footer-bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 4em 0;
@@ -194,4 +194,17 @@ $width-tight: 750px;
 .wpcf7-submit {
   background-color: $blue-dark !important;
   border-radius: 0 !important;
+}
+
+
+.cta {
+  p {
+    text-align: center;
+  }
+}
+
+.wpex-fa-social-widget .wpex-semi-rounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

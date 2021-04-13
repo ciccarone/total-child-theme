@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
       <div class="vc_section full full--bg full--blue cta"><div class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-3/5"><div class="vc_column-inner"><div class="wpb_wrapper">
         <div class="wpb_text_column wpb_content_element ">
           <div class="wpb_wrapper">
-            <p style="text-align: center; margin-top: 0;">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,</p>
+            <p style="text-align: center; margin-top: 0;">Cruise Often, Cruise Fun, Cruise Safe.<br />Subscribe for boating stories, tips & reviews.</p>
 
           </div>
         </div>

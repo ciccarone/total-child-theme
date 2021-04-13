@@ -75,7 +75,7 @@ Version: 1.0
   font-size: 1.5em;
 }
 .full > .vc_row {
-  max-width: 750px;
+  max-width: 810px;
   margin: 0 auto;
 }
 .full .vc_column-inner {
@@ -91,7 +91,7 @@ Version: 1.0
 }
 
 .new-footer {
-  background-image: url("/wp-content/uploads/2021/04/footer-bg.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), url("/wp-content/uploads/2021/04/footer-bg.jpg");
   background-size: cover;
   background-position: center;
   padding: 4em 0;
@@ -173,6 +173,16 @@ Version: 1.0
 .wpcf7-submit {
   background-color: #044394 !important;
   border-radius: 0 !important;
+}
+
+.cta p {
+  text-align: center;
+}
+
+.wpex-fa-social-widget .wpex-semi-rounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
