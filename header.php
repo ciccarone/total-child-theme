@@ -38,12 +38,26 @@ defined( 'ABSPATH' ) || exit;
         $hero_image = get_the_post_thumbnail_url();
         if (is_home()) {
           $hero_image = '/wp-content/uploads/2021/04/Maine-Light-house-resize.png';
-        }
+        } elseif (is_product_category()) {
+					$hero_image = '/wp-content/uploads/2021/04/Floating-dock-resize.png';
+				} elseif (is_product()) {
+					$hero_image = '/wp-content/uploads/2021/04/Floating-dock-resize.png';
+				}
       ?>
       <?php if (!is_front_page()): ?>
+				<?php
+					if (is_product_category()) {
+						$title = single_cat_title("", false);
+					} elseif(is_product()) {
+						$title = "Shop";
+					} else {
+						$title = get_the_title();
+					}
+
+				?>
         <div class="hero" style="background-image: url('<?php echo $hero_image ?>')">
           <div class="hero__inner">
-            <h2><?php echo get_the_title() ?></h2>
+            <h2><?php echo $title ?></h2>
           </div>
 
         </div>

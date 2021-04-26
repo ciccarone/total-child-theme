@@ -12,7 +12,7 @@ $blue-light: #2483a5;
 $blue-dark: #044394;
 $gray-light: #f7f7f7;
 
-$width-normal: 960px;
+$width-normal: 1170px;
 $width-tight: 750px;
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Righteous&display=swap');
@@ -160,12 +160,30 @@ $width-tight: 750px;
   align-items: center;
   justify-content: center;
   min-height: 50vh;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   &__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
     h2 {
       color: black;
       text-transform: none;
     }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,.5);
   }
 }
 
@@ -207,4 +225,8 @@ $width-tight: 750px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tagged_as {
+  display: none !important;
 }

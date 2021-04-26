@@ -60,7 +60,7 @@ defined( 'ABSPATH' ) || exit;
           </a>
         </div>
         <div class="new-footer__copyright">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          Copyright 2021 - Cruising Calypso
         </div>
       </div>
     </div>
